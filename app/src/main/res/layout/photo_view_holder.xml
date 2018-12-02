@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.gallery.GalleryFragment">
+
+    <!--<data>-->
+        <!--<variable-->
+                <!--name="recipe"-->
+                <!--type="com.example.android.fivewaystocookeggs.Recipe" />-->
+    <!--</data>-->
+
+    <!--<LinearLayout-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/imageView1"-->
+    <!--android:src="@drawable/download"/>-->
+    <!--<TextView-->
+    <!--android:text="TextView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_weight="1"/>-->
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/imageView2"-->
+    <!--android:src="@drawable/download"/>-->
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/imageView3"-->
+    <!--android:src="@drawable/download"/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--tools:src="@android:drawable/alert_dark_frame"-->
+    <!--android:id="@+id/imageView4" android:contentDescription="TODO"/>-->
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--tools:src="@android:drawable/alert_dark_frame"-->
+    <!--tools:srcCompat="@tools:sample/avatars"/>-->
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/imageView6"-->
+    <!--tools:src="@android:drawable/alert_dark_frame"/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="60dp" android:layout_gravity="bottom|center_horizontal"-->
+    <!--android:gravity="center">-->
+    <!--<TextView-->
+    <!--android:text="@string/Gallery"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" android:id="@+id/textView2"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+            <!--android:src="@drawable/download"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" android:id="@+id/imageView2" android:layout_weight="1"-->
+    <!--/>-->
+    <ImageView
+               android:id="@+id/recipe_image_view"
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:scaleType="centerCrop"
+               android:src="@drawable/download"
+    />
+</LinearLayout>

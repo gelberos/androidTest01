@@ -1,17 +1,27 @@
 package com.test.gelberos.androidtest01
 
+import android.app.FragmentTransaction
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
+import android.support.v4.app.FragmentActivity
+import android.support.v4.app.FragmentManager
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ImageView
+import android.widget.TextView
+import com.test.gelberos.androidtest01.R.id.add
+import com.test.gelberos.androidtest01.ui.gallery.GalleryFragmentActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
+
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +31,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
+
+            view.findViewById<TextView>(R.id.main_tv).apply {
+                this.setText("clicked");
+            }
         }
 
         val toggle = ActionBarDrawerToggle(
@@ -62,6 +76,19 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 // Handle the camera action
             }
             R.id.nav_gallery -> {
+
+//                fragmentManager.beginTransaction().add(){
+//                    add(R.id.content_main_1, GalleryFragment.newInstance())
+//                }
+//                supportFragmentManager.beginTransaction()
+//                    .add(R.id.content_main_1
+//                        , GalleryFragment.newInstance()
+//                        , "Gallery")
+//                    .commit()
+               // intent(GalleryFragmentActivity())
+                val intent = Intent(this, GalleryFragmentActivity::class.java)
+                startActivity(intent)
+
 
             }
             R.id.nav_slideshow -> {

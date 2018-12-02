@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.gallery.GalleryFragmentActivity" android:orientation="vertical">
+    <!--<fragment-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--class="com.test.gelberos.androidtest01.ui.gallery.MovieFragment"-->
+    <!--android:id="@+id/movie_Fragment"/>-->
+    <!--<fragment-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--class="com.test.gelberos.androidtest01.ui.gallery.MovieFragment"-->
+    <!--android:id="@+id/movie_Fragment2"/>-->
+
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_Top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+    >
+
+    </android.support.v4.view.ViewPager>
+    <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/viewpager_Top"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp" android:background="@color/colorPrimary"/>
+    <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_Bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>
